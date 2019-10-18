@@ -141,7 +141,7 @@ let contactInfo = graduates.map(info => `${info.first_name} ${info.email}`);
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-let unisWithUni = graduates.filter((prefix)=>  prefix.university.includes(`Uni`));
+let unisWithUni = graduates.filter(prefix => prefix.university.includes(`Uni`));
 console.log(unisWithUni);
 
 // ==== ADVANCED Array Methods ====
@@ -217,7 +217,10 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 
-let displayNames = zooAnimals.forEach((display) => `Name: ${display.animal_name} Scientific: ${display.scientific_name}`);
+let displayNames = zooAnimals.forEach(
+  display =>
+    `Name: ${display.animal_name} Scientific: ${display.scientific_name}`
+);
 console.log(displayNames);
 
 /* Request 2: .map()
@@ -248,7 +251,10 @@ console.log(lowPopulationAnimals);
 The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-let populationTotal = zooAnimals.reduce((total,aggregate) => total + aggregate.population,0)
+let populationTotal = zooAnimals.reduce(
+  (total, aggregate) => total + aggregate.population,
+  0
+);
 console.log(populationTotal);
 
 /*
@@ -256,5 +262,3 @@ console.log(populationTotal);
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
-
-
