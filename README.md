@@ -29,6 +29,7 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+.map produces an array that is equal in length to the original array. .forEach is very similar to the for loop.
 
 2. What is the difference between a function and a method?
 A function refers to a block of code written to perform a particular task or solve a given problem while a method is a function that is embedded inside of an object.
