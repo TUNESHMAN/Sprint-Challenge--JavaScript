@@ -24,7 +24,7 @@ CuboidMaker.prototype.surfaceArea = function () {
 
 
 // I instantiated a Cuboid here
-const Cuboid1 = new CuboidMaker(20, 40, 30);
+const Cuboid1 = new CuboidMaker(4, 5, 5);
 console.log(Cuboid1);
 
 console.log(Cuboid1.volume());
@@ -49,5 +49,4 @@ console.log(Cuboid1.surfaceArea());
 */
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-// console.log(cuboid.volume()); // 100
-// console.log(cuboid.surfaceArea()); // 130
+
